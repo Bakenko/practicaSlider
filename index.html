@@ -5,72 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba de sidebar</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-    <nav class="nav-bar">
-        <aside class="container">
-            <ul class="list">
-                <li>
-                    <span id="icon" class="material-symbols-sharp">
-                        home
-                    </span>
-                    <a class="item" href="#primerp">Option 1</a> 
-                    <ul id="sub-list1" class="sub-list">
-                        <li class="sub-item">
-                            <a href="#primerp">Option 1</a>
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">Byron Cardona</h1>
+
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Home</a>
+                </li>
+    
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link">About <img src="./assets/chevron_right.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About 1</a>
                         </li>
-                        <li class="sub-item">
-                            <a href="#primerp">Option 2</a>
+    
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About 2</a>
                         </li>
-                        <li class="sub-item">
-                            <a href="#primerp">Option 3</a>
+    
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">About 3</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <span id="icon" class="material-symbols-sharp">
-                        favorite
-                    </span>                        
-                    <a class="item" href="#primerp">Option 2</a>
-                    <ul id="sub-list2" class="sub-list">
-                        <li class="sub-item">
-                            <a href="#primerp">Option 1</a>
+    
+                <li class="menu__item menu__item--show">
+                <a href="#" class="menu__link">Projects <img src="./assets/chevron_right.svg" class="menu__arrow"></a>
+    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Projects 1</a>
                         </li>
-                        <li class="sub-item">
-                            <a href="#primerp">Option 2</a>
+    
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Projects 2</a>
                         </li>
-                        <li class="sub-item">
-                            <a href="#primerp">Option 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <span id="icon" class="material-symbols-sharp">
-                        star
-                    </span>
-                    <a class="item" href="#primerp">Option 3</a>
-                    <ul id="sub-list3" class="sub-list">
-                        <li class="sub-item">
-                            <a href="#primerp">Option 1</a>
-                        </li>
-                        <li class="sub-item">
-                            <a href="#primerp">Option 2</a>
-                        </li>
-                        <li class="sub-item">
-                            <a href="#primerp">Option 3</a>
+    
+                        <li class="menu__inside">
+                            <a href="#" class="menu__link menu__link--inside">Projects 3</a>
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <span id="icon" class="material-symbols-sharp">
-                        settings
-                    </span>
-                    <a class="item" href="#primerp">Option 4</a>
-                </li>
+    
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Contact</a>
+                </li>                
+    
             </ul>
-        </aside>
+
+            <div class="menu__hamburguer">
+                <img src="./assets/menu.svg" alt="" class="menu__img">
+            </div>
+
+        </section>
+        
+    </nav>
+
+    <nav class="nav">
+        <ul class="list">
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="./assets/home.svg" class="list__img">
+                    <a href="#" class="nav__link">Inicio</a>
+                </div>                 
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                     <img src="./assets/favorite.svg" class="list__img">
+                     <a href="#" class="nav__link">Favoritos</a>
+                     <img src="./assets/chevron_right.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                    
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                </ul>                
+            </li>
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="./assets/search.svg" class="list__img">
+                    <a href="#" class="nav__link">Search</a>
+                </div>                 
+            </li>
+            
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                     <img src="./assets/settings.svg" class="list__img">
+                     <a href="#" class="nav__link">Settings</a>
+                     <img src="./assets/chevron_right.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                    
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                </ul>                
+            </li>
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="./assets/star.svg" class="list__img">
+                    <a href="#" class="nav__link">Start</a>
+                </div>                 
+            </li>
+
+        </ul>
     </nav>
     <script src="./src/main.js"></script>
 </body>
